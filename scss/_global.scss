@@ -1,0 +1,34 @@
+@import "values", "typography";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+  width: 100%;
+}
+
+
+//common fonts style
+h1 {
+  font-family: $font-serif;
+}
+h2 {
+  font-family: $font-serif;
+}
+p {
+  font-family: $font-sanserif;
+}
+a {
+  text-decoration: none;
+  color: $black;
+}
+li {
+  font-family: $font-serif;
+}

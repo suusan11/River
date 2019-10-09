@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Be+Vietnam:300,400,500,600,700|EB+Garamond:400,500,600,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -339,5 +340,15 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+html {
+  font-family: "EB Garamond", serif;
+  line-height: 1.2;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  color: #5F5F5F;
 }
 /*# sourceMappingURL=style.css.map */

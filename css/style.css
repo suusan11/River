@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Be+Vietnam:300,400,500,600,700|EB+Garamond:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Be+Vietnam:300,400,500,600,700|EB+Garamond:400,500,600,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -350,5 +351,159 @@ html {
   -webkit-font-variant-ligatures: common-ligatures;
           font-variant-ligatures: common-ligatures;
   color: #5F5F5F;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  font-size: 6.25vw;
+}
+
+h2 {
+  font-family: "EB Garamond", serif;
+}
+
+p {
+  font-family: "Be Vietnam", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #5F5F5F;
+}
+
+li {
+  font-family: "EB Garamond", serif;
+  font-size: 13px;
+  font-size: 4.0625vw;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+html {
+  font-family: "EB Garamond", serif;
+  line-height: 1.2;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  color: #5F5F5F;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 95px;
+}
+
+header .link__home {
+  margin-top: 5%;
+}
+
+header .search {
+  width: 70%;
+}
+
+header .search-box {
+  position: absolute;
+  top: 3%;
+  right: 10%;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+}
+
+header .search-box::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+header .search-box:-ms-input-placeholder {
+  opacity: 0;
+}
+
+header .search-box::-ms-input-placeholder {
+  opacity: 0;
+}
+
+header .search-box::placeholder {
+  opacity: 0;
+}
+
+header .search-box:focus {
+  position: absolute;
+  top: 2%;
+  right: 20%;
+  width: 180px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #5F5F5F;
+  outline: none;
+}
+
+header .search-box:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+header .search-box:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+header .search-box:focus::-ms-input-placeholder {
+  opacity: 1;
+}
+
+header .search-box:focus::placeholder {
+  opacity: 1;
+}
+
+header .search-submit {
+  position: absolute;
+  top: 3%;
+  right: 10%;
+  font-family: 'Font Awesome\ 5 Free';
+  color: #DBEAF1;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+header .search-submit:focus {
+  outline: none;
+}
+
+header .header-nav > ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

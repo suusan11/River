@@ -1,0 +1,14 @@
+.pagenation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 0;
+  p {
+    @include font_vw(13);
+    font-family: $font-serif;
+  }
+  a:hover {
+    opacity: 0.8;
+  }
+}

@@ -43,7 +43,7 @@
         margin: 5% 0;
       }
       &--intro {
-        @include font_vw(13);
+        @include font_vw(10);
         font-weight: $font-weight-light;
         margin: 0
       }

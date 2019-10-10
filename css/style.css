@@ -570,8 +570,8 @@ header .header-nav > ul {
 }
 
 .thumbnail .summary__text--intro {
-  font-size: 13px;
-  font-size: 4.0625vw;
+  font-size: 10px;
+  font-size: 3.125vw;
   font-weight: 300;
   margin: 0;
 }

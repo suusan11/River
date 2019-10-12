@@ -14,6 +14,10 @@ body {
   width: 100%;
 }
 
+main {
+  width: 100%;
+}
+
 
 //common fonts style
 h1 {
@@ -22,6 +26,8 @@ h1 {
 }
 h2 {
   font-family: $font-serif;
+  @include font_vw(18);
+  font-weight: $font-weight-medium;
 }
 p {
   font-family: $font-sanserif;

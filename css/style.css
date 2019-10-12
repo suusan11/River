@@ -369,6 +369,10 @@ body {
   width: 100%;
 }
 
+main {
+  width: 100%;
+}
+
 h1 {
   font-family: "EB Garamond", serif;
   font-size: 20px;
@@ -377,6 +381,9 @@ h1 {
 
 h2 {
   font-family: "EB Garamond", serif;
+  font-size: 18px;
+  font-size: 5.625vw;
+  font-weight: 500;
 }
 
 p {
@@ -581,7 +588,7 @@ footer .footer__widet--item-category {
 
 footer .footer__widet--item-category p {
   color: #B27C76;
-  margin: NaN 0;
+  margin: 0 0 0 2%;
 }
 
 footer .footer__widet--item-category p::after {
@@ -712,5 +719,154 @@ footer .footer__copy p {
 
 .thumbnail .summary img.post__image {
   margin-top: 5%;
+}
+
+.main__header {
+  position: relative;
+  font-size: 15px;
+  font-size: 4.6875vw;
+  color: #B27C76;
+  margin: 10% 0;
+}
+
+.main__header::after {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  content: '';
+  display: block;
+  border-top: 1px solid #B27C76;
+  width: 80%;
+}
+
+.post {
+  position: relative;
+  width: 100%;
+}
+
+.post__date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.post__date--item {
+  font-family: "EB Garamond", serif;
+  margin: 0;
+}
+
+.post__date--item.month {
+  font-size: 16px;
+  font-size: 5vw;
+}
+
+.post__date--item.day {
+  font-size: 16px;
+  font-size: 5vw;
+}
+
+.post__date--item.year {
+  font-size: 10px;
+  font-size: 3.125vw;
+}
+
+.post__text {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.post__text--title {
+  font-size: 20px;
+  font-size: 6.25vw;
+  font-weight: 500;
+  margin: 5% 0;
+}
+
+.post__text--intro {
+  font-size: 10px;
+  font-size: 3.125vw;
+  font-weight: 300;
+  margin: 0;
+}
+
+.post__image {
+  width: 100%;
+  margin: 10% 0;
+}
+
+.post__sentence {
+  font-size: 13px;
+  font-size: 4.0625vw;
+  line-height: 1.8;
+}
+
+.post__tags {
+  position: relative;
+  margin-top: 20%;
+}
+
+.post__tags p {
+  font-size: 13px;
+  font-size: 4.0625vw;
+  margin-bottom: 0;
+}
+
+.post__tags--title {
+  color: #B27C76;
+}
+
+.post__tags--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post__tags--wrap p {
+  margin-right: 3%;
+}
+
+.post__tags--wrap p::after {
+  content: ",";
+  display: inline;
+}
+
+.post__tags--wrap p:last-child::after {
+  display: none;
+}
+
+.post .border__top {
+  border-top: 0.5px solid #B27C76;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.post .border__bottom {
+  border-bottom: 0.5px solid #B27C76;
+  width: 50%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.link__posts {
+  margin: 20% 0;
+}
+
+.link__posts p {
+  font-size: 15px;
+  font-size: 4.6875vw;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 0;
+}
+
+.link__posts h2 {
+  margin: 5% 0 15% 0;
 }
 /*# sourceMappingURL=style.css.map */

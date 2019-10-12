@@ -23,6 +23,7 @@ main {
 h1 {
   font-family: $font-serif;
   @include font_vw(20);
+  font-weight: $font-weight-medium;
 }
 h2 {
   font-family: $font-serif;

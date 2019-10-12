@@ -377,6 +377,7 @@ h1 {
   font-family: "EB Garamond", serif;
   font-size: 20px;
   font-size: 6.25vw;
+  font-weight: 500;
 }
 
 h2 {
@@ -409,6 +410,25 @@ li {
 
 img {
   width: 100%;
+}
+
+.main__header {
+  position: relative;
+  font-size: 15px;
+  font-size: 4.6875vw;
+  color: #B27C76;
+  margin: 10% 0;
+}
+
+.main__header::after {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  content: '';
+  display: block;
+  border-top: 1px solid #B27C76;
+  width: 75%;
+  margin-left: 5%;
 }
 
 html {
@@ -721,24 +741,6 @@ footer .footer__copy p {
   margin-top: 5%;
 }
 
-.main__header {
-  position: relative;
-  font-size: 15px;
-  font-size: 4.6875vw;
-  color: #B27C76;
-  margin: 10% 0;
-}
-
-.main__header::after {
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  content: '';
-  display: block;
-  border-top: 1px solid #B27C76;
-  width: 80%;
-}
-
 .post {
   position: relative;
   width: 100%;
@@ -868,5 +870,15 @@ footer .footer__copy p {
 
 .link__posts h2 {
   margin: 5% 0 15% 0;
+}
+
+.gallery__thumbnail {
+  margin: 15% 0;
+}
+
+.gallery__thumbnail--intro {
+  font-size: 10px;
+  font-size: 3.125vw;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,27 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>WordPress Theme River</title>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="https://kit.fontawesome.com/6f98ed0cf6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
   <header>
-    <div class="header-top">
-      <h1><a href="">River</a></h1>
-      <div class="search-wrap">
+    <div class="container">
+      <h1 class="link__home"><a href="">River</a></h1>
+      <div class="search">
         <form id="search-form" role="search" action="/" method="get">
           <input class="search-box" name="search-box" type="text" placeholder="Search">
-          <input class="search-submit" type="submit" value="&#xf002;">
+          <input class="search-submit fas" type="submit" value="&#xf002;">
         </form>
       </div>
-    </div>
-    <div class="header-nav">
-      <nav>
+      <nav class="header-nav">
         <ul>
-          <li>Lifestyles</li>
-          <li>Gallery</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="">Lifestyles</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -49,28 +48,36 @@
 
   <footer>
     <div class="footer__widet">
-      <div class="sns">
-        <p>Follow me</p>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
+      <div class="footer__widet--item">
+        <p class="footer__widet--header">Follow me</p>
+        <div class="footer__widet--item-sns">
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-      <div class="footer__widet--category">
-        <p>Travel</p>
-        <p>Health</p>
-        <p>Food</p>
+      <div class="footer__widet--item">
+        <p class="footer__widet--header">Categories</p>
+        <div class="footer__widet--item-category">
+          <p>Travel</p>
+          <p>Health</p>
+          <p>Food</p>
+        </div>
       </div>
-      <div class="footer__widet--tags">
-        <p>brunch</p>
-        <p>cafe</p>
-        <p>freedom</p>
-        <p>gulten free</p>
-        <p>one day trip</p>
-        <p>photography</p>
-        <p>road trips</p>
-        <p>workout</p>
-        <p>weekend</p>
-        <p>yoga</p>
+      <div class="footer__widet--item">
+        <p class="footer__widet--header">Tags</p>
+        <div class="footer__widet--item-tags">
+          <p><a href="">brunch</a></p>
+          <p><a href="">cafe</a></p>
+          <p><a href="">freedom</a></p>
+          <p><a href="">gulten free</a></p>
+          <p><a href="">one day trip</a></p>
+          <p><a href="">photography</a></p>
+          <p><a href="">road trips</a></p>
+          <p><a href="">workout</a></p>
+          <p><a href="">weekend</a></p>
+          <p><a href="">yoga</a></p>
+        </div>
       </div>
     </div>
     <div class="footer__copy">

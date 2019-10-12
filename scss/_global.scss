@@ -51,3 +51,20 @@ li {
 img {
   width: 100%;
 }
+
+.main__header {
+  position: relative;
+  @include font_vw(15);
+  color: $red;
+  margin: 10% 0;
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    content: '';
+    display: block;
+    border-top: 1px solid $red;
+    width: 75%;
+    margin-left: 5%;
+  }
+}

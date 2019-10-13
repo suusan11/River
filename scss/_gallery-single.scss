@@ -1,0 +1,15 @@
+.gallery {
+  &--title {
+    margin-top: 15%;
+  }
+  &--intro {
+    @include font_vw(10);
+    font-weight: $font-weight-light;
+    margin-bottom: 15%;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-gap: 50px;
+}

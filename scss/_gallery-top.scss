@@ -1,0 +1,7 @@
+.gallery__thumbnail {
+  margin: 15% 0;
+  &--intro {
+    @include font_vw(10);
+    font-weight: $font-weight-light;
+  }
+}

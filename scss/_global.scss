@@ -1,0 +1,71 @@
+@import "values", "typography", "mixin";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+
+//common fonts style
+h1 {
+  font-family: $font-serif;
+  @include font_vw(20);
+  font-weight: $font-weight-medium;
+}
+h2 {
+  font-family: $font-serif;
+  @include font_vw(18);
+  font-weight: $font-weight-medium;
+}
+p {
+  font-family: $font-sanserif;
+}
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}
+li {
+  font-family: $font-serif;
+  @include font_vw(13);
+}
+
+//common style
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.main__header {
+  position: relative;
+  @include font_vw(15);
+  color: $red;
+  margin: 10% 0;
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    content: '';
+    display: block;
+    border-top: 1px solid $red;
+    width: 75%;
+    margin-left: 5%;
+  }
+}

@@ -1,0 +1,64 @@
+@import "values";
+
+header {
+  width: 100%;
+  height: 95px;
+  border-bottom: 1px solid $gray;
+
+  .link__home {
+    margin-top: 5%;
+  }
+  .search {
+    width: 70%;
+
+    &-box {
+      position: absolute;
+      top: 3%;
+      right: 10%;
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      border: none;
+      background: transparent;
+      &::placeholder {
+        opacity: 0;
+      }
+
+      &:focus {
+        position: absolute;
+        top: 2%;
+        right: 20%;
+        width: 180px;
+        background: $white;
+        border-bottom: 0.5px solid $gray;
+        outline: none;
+        &::placeholder {
+          opacity: 1;
+        }
+      }
+    }
+    &-submit {
+      position: absolute;
+      top: 3%;
+      right: 10%;
+      font-family: 'Font Awesome\ 5 Free';
+      color: $blue;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .header-nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-top: 8%;
+  }
+}

@@ -901,4 +901,15 @@ footer .footer__copy p {
   display: grid;
   grid-gap: 50px;
 }
+
+.about {
+  margin-bottom: 15%;
+}
+
+.profile__text {
+  font-size: 13px;
+  font-size: 4.0625vw;
+  font-family: "Be Vietnam", sans-serif;
+  line-height: 1.8;
+}
 /*# sourceMappingURL=style.css.map */

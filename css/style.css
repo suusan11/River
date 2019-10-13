@@ -914,4 +914,74 @@ footer .footer__copy p {
   line-height: 1.5;
   letter-spacing: 0.2px;
 }
+
+.contact__form {
+  margin: 10% 0;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  border: 0.5px solid #5F5F5F;
+  padding: 10px;
+  margin: 5% 0;
+  outline: none;
+  font-size: 100%;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+.contact__form input::-webkit-input-placeholder,
+.contact__form textarea::-webkit-input-placeholder {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 13px;
+  font-size: 4.0625vw;
+  color: #5F5F5F;
+  opacity: 0.7;
+}
+
+.contact__form input:-ms-input-placeholder,
+.contact__form textarea:-ms-input-placeholder {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 13px;
+  font-size: 4.0625vw;
+  color: #5F5F5F;
+  opacity: 0.7;
+}
+
+.contact__form input::-ms-input-placeholder,
+.contact__form textarea::-ms-input-placeholder {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 13px;
+  font-size: 4.0625vw;
+  color: #5F5F5F;
+  opacity: 0.7;
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 13px;
+  font-size: 4.0625vw;
+  color: #5F5F5F;
+  opacity: 0.7;
+}
+
+.contact__form input {
+  height: 50px;
+}
+
+.contact__form textarea {
+  overflow: scroll;
+}
+
+.contact__form button {
+  width: 40%;
+  height: 50px;
+  background-color: #B27C76;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 13px;
+  font-size: 4.0625vw;
+  color: #FFFFFF;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

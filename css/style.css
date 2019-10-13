@@ -881,4 +881,21 @@ footer .footer__copy p {
   font-size: 3.125vw;
   font-weight: 300;
 }
+
+.gallery--title {
+  margin-top: 15%;
+}
+
+.gallery--intro {
+  font-size: 10px;
+  font-size: 3.125vw;
+  font-weight: 300;
+  margin-bottom: 15%;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 50px;
+}
 /*# sourceMappingURL=style.css.map */

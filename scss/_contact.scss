@@ -1,0 +1,9 @@
+.contact {
+  margin-bottom: 15%;
+
+  &__text {
+    font-weight: $font-weight-light;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+  }
+}

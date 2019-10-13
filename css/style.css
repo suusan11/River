@@ -389,6 +389,8 @@ h2 {
 
 p {
   font-family: "Be Vietnam", sans-serif;
+  font-size: 13px;
+  font-size: 4.0625vw;
 }
 
 a {
@@ -553,8 +555,6 @@ header .header-nav > ul {
 }
 
 .pagenation p {
-  font-size: 13px;
-  font-size: 4.0625vw;
   font-family: "EB Garamond", serif;
 }
 
@@ -705,8 +705,6 @@ footer .footer__copy p {
 }
 
 .thumbnail .summary__text--category {
-  font-size: 13px;
-  font-size: 4.0625vw;
   color: #B27C76;
   margin: 0;
 }
@@ -802,8 +800,6 @@ footer .footer__copy p {
 }
 
 .post__sentence {
-  font-size: 13px;
-  font-size: 4.0625vw;
   line-height: 1.8;
 }
 
@@ -813,8 +809,6 @@ footer .footer__copy p {
 }
 
 .post__tags p {
-  font-size: 13px;
-  font-size: 4.0625vw;
   margin-bottom: 0;
 }
 
@@ -907,9 +901,17 @@ footer .footer__copy p {
 }
 
 .profile__text {
-  font-size: 13px;
-  font-size: 4.0625vw;
   font-family: "Be Vietnam", sans-serif;
   line-height: 1.8;
+}
+
+.contact {
+  margin-bottom: 15%;
+}
+
+.contact__text {
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -380,6 +380,12 @@ h1 {
   font-weight: 500;
 }
 
+@media (min-width: 960px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
 h2 {
   font-family: "EB Garamond", serif;
   font-size: 18px;
@@ -403,6 +409,12 @@ li {
   font-family: "EB Garamond", serif;
   font-size: 13px;
   font-size: 4.0625vw;
+}
+
+@media (min-width: 960px) {
+  li {
+    font-size: 20px;
+  }
 }
 
 .container {
@@ -445,12 +457,18 @@ html {
 
 header {
   width: 100%;
-  height: 95px;
+  height: 100%;
   border-bottom: 1px solid #C2C6C7;
 }
 
 header .link__home {
   margin-top: 5%;
+}
+
+@media (min-width: 960px) {
+  header .link__home {
+    font-size: 30px;
+  }
 }
 
 header .search {
@@ -466,6 +484,12 @@ header .search-box {
   height: 30px;
   border: none;
   background: transparent;
+}
+
+@media (min-width: 960px) {
+  header .search-box {
+    top: 6%;
+  }
 }
 
 header .search-box::-webkit-input-placeholder {
@@ -492,6 +516,12 @@ header .search-box:focus {
   background: #FFFFFF;
   border-bottom: 0.5px solid #C2C6C7;
   outline: none;
+}
+
+@media (min-width: 960px) {
+  header .search-box:focus {
+    top: 5%;
+  }
 }
 
 header .search-box:focus::-webkit-input-placeholder {
@@ -521,6 +551,12 @@ header .search-submit {
   cursor: pointer;
 }
 
+@media (min-width: 960px) {
+  header .search-submit {
+    top: 6%;
+  }
+}
+
 header .search-submit:focus {
   outline: none;
 }
@@ -538,6 +574,21 @@ header .header-nav > ul {
           align-items: center;
   padding: 0;
   margin-top: 8%;
+}
+
+@media (min-width: 960px) {
+  header .header-nav > ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: -5.5% 0 3% 10%;
+  }
+}
+
+@media (min-width: 960px) {
+  header .header-nav > ul > li {
+    padding: 0 3%;
+  }
 }
 
 .pagenation {

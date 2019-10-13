@@ -2,7 +2,6 @@
   margin-bottom: 15%;
 }
 .profile__text {
-  @include font_vw(13);
   font-family: $font-sanserif;
   line-height: 1.8;
 }

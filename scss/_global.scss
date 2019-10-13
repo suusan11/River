@@ -32,6 +32,7 @@ h2 {
 }
 p {
   font-family: $font-sanserif;
+  @include font_vw(13);
 }
 a {
   text-decoration: none;

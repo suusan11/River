@@ -42,14 +42,12 @@
     margin: 10% 0;
   }
   &__sentence {
-  @include font_vw(13);
   line-height: 1.8;
   }
   &__tags {
     position: relative;
     margin-top: 20%;
     p {
-      @include font_vw(13);
       margin-bottom: 0;
     }
     &--title {

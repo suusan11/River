@@ -29,7 +29,6 @@ footer {
         justify-content: flex-start;
         align-items: center;
         p {
-          color: $red;
           margin: 0 0 0 2%;
           &::after {
             content: '/';
@@ -39,6 +38,9 @@ footer {
           }
           &:last-child::after {
             display: none;
+          }
+          a {
+            color: $red;
           }
         }
       }

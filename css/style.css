@@ -607,7 +607,6 @@ footer .footer__widet--item-category {
 }
 
 footer .footer__widet--item-category p {
-  color: #B27C76;
   margin: 0 0 0 2%;
 }
 
@@ -620,6 +619,10 @@ footer .footer__widet--item-category p::after {
 
 footer .footer__widet--item-category p:last-child::after {
   display: none;
+}
+
+footer .footer__widet--item-category p a {
+  color: #B27C76;
 }
 
 footer .footer__widet--item-tags {

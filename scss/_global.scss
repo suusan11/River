@@ -24,6 +24,9 @@ h1 {
   font-family: $font-serif;
   @include font_vw(20);
   font-weight: $font-weight-medium;
+  @include pc {
+    font-size: 25px;
+  }
 }
 h2 {
   font-family: $font-serif;
@@ -42,6 +45,9 @@ a {
 li {
   font-family: $font-serif;
   @include font_vw(13);
+  @include pc {
+    font-size: 20px;
+  }
 }
 
 //common style

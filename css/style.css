@@ -428,6 +428,13 @@ li {
   margin: 0 auto;
 }
 
+@media (min-width: 960px) {
+  .container-pc {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
 img {
   width: 100%;
 }
@@ -440,6 +447,12 @@ img {
   margin: 10% 0;
 }
 
+@media (min-width: 960px) {
+  .main__header {
+    font-size: 20px;
+  }
+}
+
 .main__header::after {
   position: absolute;
   top: 50%;
@@ -449,6 +462,13 @@ img {
   border-top: 1px solid #B27C76;
   width: 75%;
   margin-left: 5%;
+}
+
+@media (min-width: 960px) {
+  .main__header::after {
+    left: 10%;
+    width: 30%;
+  }
 }
 
 html {
@@ -990,11 +1010,27 @@ html {
   width: 100%;
 }
 
+.post__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .post__date {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
+  width: 30%;
+  text-align: left;
+}
+
+@media (min-width: 960px) {
+  .post__date {
+    margin-left: 0;
+  }
+}
+
+.post__date .text__center {
   text-align: center;
 }
 
@@ -1003,14 +1039,15 @@ html {
   margin: 0;
 }
 
-.post__date--item.month {
+.post__date--item.month, .post__date--item.day {
   font-size: 16px;
   font-size: 5vw;
 }
 
-.post__date--item.day {
-  font-size: 16px;
-  font-size: 5vw;
+@media (min-width: 960px) {
+  .post__date--item.month, .post__date--item.day {
+    font-size: 26px;
+  }
 }
 
 .post__date--item.year {
@@ -1018,16 +1055,27 @@ html {
   font-size: 3.125vw;
 }
 
+@media (min-width: 960px) {
+  .post__date--item.year {
+    font-size: 16px;
+  }
+}
+
 .post__text {
   width: 70%;
-  margin-left: 30%;
 }
 
 .post__text--title {
   font-size: 20px;
   font-size: 6.25vw;
   font-weight: 500;
-  margin: 5% 0;
+  margin-top: 0;
+}
+
+@media (min-width: 960px) {
+  .post__text--title {
+    font-size: 32px;
+  }
 }
 
 .post__text--intro {
@@ -1035,6 +1083,12 @@ html {
   font-size: 3.125vw;
   font-weight: 300;
   margin: 0;
+}
+
+@media (min-width: 960px) {
+  .post__text--intro {
+    font-size: 16px;
+  }
 }
 
 .post__image {

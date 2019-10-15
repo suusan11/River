@@ -68,25 +68,44 @@
           font-size: 16px;
         }
       }
-    }
-    &__link-post {
-      @include font_vw(10);
-      margin-left: 30%;
-      &::before {
-        display: inline-block;
-        content: "";
-        border-top: 0.5px solid $black;
-        width: 30%;
-        margin-right: 5%;
-        padding-bottom: 2%;
-      }
-      @include pc {
-        font-size: 16px;
-        margin-left: 20%;
+      &--link-post {
+        @include font_vw(10);
+        &::before {
+          display: inline-block;
+          content: "";
+          border-top: 0.5px solid $black;
+          width: 30%;
+          margin-right: 5%;
+          padding-bottom: 2%;
+        }
+        @include pc {
+          font-size: 16px;
+        }
       }
     }
     img.post__image {
       margin-top: 5%;
+    }
+
+    //new post layout only for pc
+    @include pc {
+      &.new-post {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 420px;
+
+        .summary__date {
+          width: 10%;
+        }
+        .summary__text {
+          width: 30%;
+        }
+        .post__image {
+          width: 40%;
+        }
+      }
     }
   }
 }

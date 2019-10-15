@@ -935,13 +935,12 @@ html {
   }
 }
 
-.thumbnail__flex .summary__link-post {
+.thumbnail__flex .summary__text--link-post {
   font-size: 10px;
   font-size: 3.125vw;
-  margin-left: 30%;
 }
 
-.thumbnail__flex .summary__link-post::before {
+.thumbnail__flex .summary__text--link-post::before {
   display: inline-block;
   content: "";
   border-top: 0.5px solid #5F5F5F;
@@ -951,14 +950,38 @@ html {
 }
 
 @media (min-width: 960px) {
-  .thumbnail__flex .summary__link-post {
+  .thumbnail__flex .summary__text--link-post {
     font-size: 16px;
-    margin-left: 20%;
   }
 }
 
 .thumbnail__flex .summary img.post__image {
   margin-top: 5%;
+}
+
+@media (min-width: 960px) {
+  .thumbnail__flex .summary.new-post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    height: 420px;
+  }
+  .thumbnail__flex .summary.new-post .summary__date {
+    width: 10%;
+  }
+  .thumbnail__flex .summary.new-post .summary__text {
+    width: 30%;
+  }
+  .thumbnail__flex .summary.new-post .post__image {
+    width: 40%;
+  }
 }
 
 .post {

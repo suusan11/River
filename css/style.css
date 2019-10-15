@@ -660,6 +660,13 @@ html {
   margin: 10% 0;
 }
 
+@media (min-width: 960px) {
+  .pagenation {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
 .pagenation p {
   font-family: "EB Garamond", serif;
 }

@@ -1186,6 +1186,12 @@ html {
   font-weight: 300;
 }
 
+@media (min-width: 960px) {
+  .gallery__thumbnail--intro {
+    font-size: 16px;
+  }
+}
+
 .gallery--title {
   margin-top: 15%;
 }

@@ -1020,7 +1020,7 @@ html {
 }
 
 .post__date {
-  width: 30%;
+  width: 10%;
   text-align: left;
 }
 
@@ -1062,7 +1062,7 @@ html {
 }
 
 .post__text {
-  width: 70%;
+  width: 80%;
 }
 
 .post__text--title {

@@ -393,6 +393,12 @@ h2 {
   font-weight: 500;
 }
 
+@media (min-width: 960px) {
+  h2 {
+    font-size: 23px;
+  }
+}
+
 p {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
@@ -1156,14 +1162,18 @@ html {
 }
 
 .link__posts p {
-  font-size: 15px;
-  font-size: 4.6875vw;
   font-family: "EB Garamond", serif;
   margin-bottom: 0;
 }
 
 .link__posts h2 {
   margin: 5% 0 15% 0;
+}
+
+@media (min-width: 960px) {
+  .link__posts h2 {
+    margin-bottom: 10%;
+  }
 }
 
 .gallery__thumbnail {

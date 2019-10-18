@@ -1390,7 +1390,7 @@ html {
 .contact__form textarea {
   width: 100%;
   border: 0.5px solid #5F5F5F;
-  padding: 10px;
+  padding: 7px 10px 10px 10px;
   margin: 5% 0;
   outline: none;
   font-size: 100%;
@@ -1404,11 +1404,17 @@ html {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact__form input,
+  .contact__form textarea {
+    margin: 2% 0;
+  }
+}
+
 .contact__form input::-webkit-input-placeholder,
 .contact__form textarea::-webkit-input-placeholder {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #5F5F5F;
   opacity: 0.7;
 }
@@ -1417,7 +1423,6 @@ html {
 .contact__form textarea:-ms-input-placeholder {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #5F5F5F;
   opacity: 0.7;
 }
@@ -1426,7 +1431,6 @@ html {
 .contact__form textarea::-ms-input-placeholder {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #5F5F5F;
   opacity: 0.7;
 }
@@ -1435,28 +1439,8 @@ html {
 .contact__form textarea::placeholder {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #5F5F5F;
   opacity: 0.7;
-}
-
-@media (min-width: 960px) {
-  .contact__form input::-webkit-input-placeholder,
-  .contact__form textarea::-webkit-input-placeholder {
-    font-size: 14px;
-  }
-  .contact__form input:-ms-input-placeholder,
-  .contact__form textarea:-ms-input-placeholder {
-    font-size: 14px;
-  }
-  .contact__form input::-ms-input-placeholder,
-  .contact__form textarea::-ms-input-placeholder {
-    font-size: 14px;
-  }
-  .contact__form input::placeholder,
-  .contact__form textarea::placeholder {
-    font-size: 14px;
-  }
 }
 
 .contact__form input {
@@ -1473,12 +1457,18 @@ html {
   background-color: #B27C76;
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #FFFFFF;
   cursor: pointer;
 }
 
 @media (min-width: 960px) {
+  .contact__form button {
+    width: 23%;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .contact__form button {
     width: 23%;
     font-size: 18px;

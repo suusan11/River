@@ -12,7 +12,7 @@
     textarea {
       width: 100%;
       border: 0.5px solid $black;
-      padding: 10px;
+      padding: 7px 10px 10px 10px;
       margin: 5% 0;
       outline: none;
       font-size: 100%;
@@ -20,14 +20,14 @@
       @include pc {
         margin: 2% 0;
       }
+      @include md {
+        margin: 2% 0;
+      }
       &::placeholder {
         font-family: $font-sanserif;
-        @include font_vw(13);
+        font-size: 13px;
         color: $black;
         opacity: 0.7;
-        @include pc {
-          font-size: 14px;
-        }
       }
     }
     input {
@@ -41,10 +41,14 @@
       height: 50px;
       background-color: $red;
       font-family: $font-sanserif;
-      @include font_vw(13);
+      font-size: 13px;
       color: $white;
       cursor: pointer;
       @include pc {
+        width: 23%;
+        font-size: 18px;
+      }
+      @include md {
         width: 23%;
         font-size: 18px;
       }

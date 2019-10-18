@@ -5,6 +5,9 @@
   height: 100%;
   border-bottom: 1px solid $gray;
   padding: 0 2.5%;
+  @include md {
+    padding: 0;
+  }
 
   &__flex {
     display: flex;

@@ -1339,12 +1339,17 @@ html {
 
 .gallery--intro {
   font-size: 10px;
-  font-size: 3.125vw;
   font-weight: 300;
   margin-bottom: 15%;
 }
 
 @media (min-width: 960px) {
+  .gallery--intro {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .gallery--intro {
     font-size: 16px;
   }

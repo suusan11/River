@@ -1251,6 +1251,13 @@ html {
   font-family: "Be Vietnam", sans-serif;
 }
 
+@media (min-width: 960px) {
+  .contact__form input,
+  .contact__form textarea {
+    margin: 2% 0;
+  }
+}
+
 .contact__form input::-webkit-input-placeholder,
 .contact__form textarea::-webkit-input-placeholder {
   font-family: "Be Vietnam", sans-serif;
@@ -1287,6 +1294,25 @@ html {
   opacity: 0.7;
 }
 
+@media (min-width: 960px) {
+  .contact__form input::-webkit-input-placeholder,
+  .contact__form textarea::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .contact__form input:-ms-input-placeholder,
+  .contact__form textarea:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .contact__form input::-ms-input-placeholder,
+  .contact__form textarea::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .contact__form input::placeholder,
+  .contact__form textarea::placeholder {
+    font-size: 14px;
+  }
+}
+
 .contact__form input {
   height: 50px;
 }
@@ -1304,5 +1330,12 @@ html {
   font-size: 4.0625vw;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+@media (min-width: 960px) {
+  .contact__form button {
+    width: 23%;
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

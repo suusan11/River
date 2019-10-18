@@ -17,11 +17,17 @@
       outline: none;
       font-size: 100%;
       font-family: $font-sanserif;
+      @include pc {
+        margin: 2% 0;
+      }
       &::placeholder {
         font-family: $font-sanserif;
         @include font_vw(13);
         color: $black;
         opacity: 0.7;
+        @include pc {
+          font-size: 14px;
+        }
       }
     }
     input {
@@ -38,6 +44,10 @@
       @include font_vw(13);
       color: $white;
       cursor: pointer;
+      @include pc {
+        width: 23%;
+        font-size: 18px;
+      }
     }
   }
 }

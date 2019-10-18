@@ -14,8 +14,12 @@
     margin-top: 20%;
     @include pc {
       width: 45%;
-      height: 600px;
+      height: auto;
       padding: 5%;
+      margin: 10% 2.5% 0;
+    }
+    @include md {
+      height: auto;
       margin: 10% 2.5% 0;
     }
 
@@ -28,14 +32,20 @@
         margin: 0;
         &.month,
         &.day {
-          @include font_vw(16);
+          font-size: 16px;
           @include pc {
+            font-size: 26px;
+          }
+          @include md {
             font-size: 26px;
           }
         }
         &.year {
-          @include font_vw(10);
+          font-size: 10px;
           @include pc {
+            font-size: 16px;
+          }
+          @include md {
             font-size: 16px;
           }
         }
@@ -49,23 +59,29 @@
         margin: 0;
       }
       &--title {
-        @include font_vw(20);
+        font-size: 20px;
         font-weight: $font-weight-medium;
         margin: 5% 0;
         @include pc {
           font-size: 32px;
         }
+        @include md {
+          font-size: 32px;
+        }
       }
       &--intro {
-        @include font_vw(10);
+        font-size: 10px;
         font-weight: $font-weight-light;
         margin: 0;
         @include pc {
           font-size: 16px;
         }
+        @include md {
+          font-size: 16px;
+        }
       }
       &--link-post {
-        @include font_vw(10);
+        font-size: 10px;
         &::before {
           display: inline-block;
           content: "";
@@ -75,6 +91,9 @@
           padding-bottom: 2%;
         }
         @include pc {
+          font-size: 16px;
+        }
+        @include md {
           font-size: 16px;
         }
       }

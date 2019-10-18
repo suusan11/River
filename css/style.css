@@ -526,6 +526,12 @@ html {
   padding: 0 2.5%;
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .header {
+    padding: 0;
+  }
+}
+
 .header__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1311,12 +1317,17 @@ html {
 }
 
 .gallery__thumbnail--intro {
-  font-size: 10px;
-  font-size: 3.125vw;
+  font-size: 19px;
   font-weight: 300;
 }
 
 @media (min-width: 960px) {
+  .gallery__thumbnail--intro {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .gallery__thumbnail--intro {
     font-size: 16px;
   }

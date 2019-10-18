@@ -27,6 +27,9 @@ h1 {
   @include pc {
     font-size: 25px;
   }
+  @include md {
+    font-size: 26px;
+  }
 }
 h2 {
   font-family: $font-serif;
@@ -52,6 +55,9 @@ li {
   font-family: $font-serif;
   @include font_vw(13);
   @include pc {
+    font-size: 20px;
+  }
+  @include md {
     font-size: 20px;
   }
 }

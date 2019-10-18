@@ -1203,10 +1203,18 @@ html {
   margin-bottom: 15%;
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 50px;
+@media (min-width: 960px) {
+  .gallery--intro {
+    font-size: 16px;
+  }
+}
+
+.gallery--items {
+  margin-top: 10%;
+}
+
+.gallery--item {
+  margin: 3% 0;
 }
 
 .about {

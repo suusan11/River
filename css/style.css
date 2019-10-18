@@ -376,7 +376,6 @@ main {
 h1 {
   font-family: "EB Garamond", serif;
   font-size: 20px;
-  font-size: 6.25vw;
   font-weight: 500;
 }
 
@@ -408,10 +407,15 @@ h2 {
 p {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
 }
 
 @media (min-width: 960px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 560px) {
   p {
     font-size: 18px;
   }
@@ -426,7 +430,6 @@ a {
 li {
   font-family: "EB Garamond", serif;
   font-size: 13px;
-  font-size: 4.0625vw;
 }
 
 @media (min-width: 960px) {
@@ -760,10 +763,15 @@ html {
 .footer__widet--header {
   font-family: "EB Garamond", serif;
   font-size: 15px;
-  font-size: 4.6875vw;
 }
 
 @media (min-width: 960px) {
+  .footer__widet--header {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 560px) {
   .footer__widet--header {
     font-size: 20px;
   }
@@ -777,6 +785,12 @@ html {
 @media (min-width: 960px) {
   .footer__widet--item {
     margin: 0 1.5%;
+  }
+}
+
+@media (min-width: 560px) {
+  .footer__widet--item {
+    margin-bottom: 3%;
   }
 }
 
@@ -855,13 +869,19 @@ html {
 
 .footer__widet--item-tags p {
   font-size: 10px;
-  font-size: 3.125vw;
   border: 0.5px solid #5F5F5F;
   margin: 0 5% 5% 0;
   padding: 5px 10px;
 }
 
 @media (min-width: 960px) {
+  .footer__widet--item-tags p {
+    font-size: 15px;
+    margin: 0 10px 10px 0;
+  }
+}
+
+@media (min-width: 560px) {
   .footer__widet--item-tags p {
     font-size: 15px;
     margin: 0 10px 10px 0;
@@ -875,7 +895,6 @@ html {
 
 .footer__copy p {
   font-size: 10px;
-  font-size: 3.125vw;
   line-height: 38px;
 }
 

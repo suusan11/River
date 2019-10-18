@@ -22,24 +22,33 @@ main {
 //common fonts style
 h1 {
   font-family: $font-serif;
-  @include font_vw(20);
+  font-size: 20px;
   font-weight: $font-weight-medium;
   @include pc {
+    font-size: 25px;
+  }
+  @include md {
     font-size: 25px;
   }
 }
 h2 {
   font-family: $font-serif;
-  @include font_vw(18);
+  font-size: 18px;
   font-weight: $font-weight-medium;
   @include pc {
+    font-size: 23px;
+  }
+  @include md {
     font-size: 23px;
   }
 }
 p {
   font-family: $font-sanserif;
-  @include font_vw(13);
+  font-size: 13px;
   @include pc {
+    font-size: 18px;
+  }
+  @include md {
     font-size: 18px;
   }
 }
@@ -50,8 +59,11 @@ a {
 }
 li {
   font-family: $font-serif;
-  @include font_vw(13);
+  font-size: 13px;
   @include pc {
+    font-size: 20px;
+  }
+  @include md {
     font-size: 20px;
   }
 }
@@ -74,24 +86,31 @@ img {
 
 .main__header {
   position: relative;
-  @include font_vw(15);
+  font-size: 15px;
   color: $red;
   margin: 10% 0;
   @include pc {
     font-size: 20px;
   }
+  @include md {
+    font-size: 20px;
+  }
   &::after {
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 50px;
     content: '';
     display: block;
     border-top: 1px solid $red;
-    width: 75%;
+    width: 150px;
     margin-left: 5%;
     @include pc {
-      left: 10%;
-      width: 30%;
+      left: 50px;
+      width: 215px;
+    }
+    @include md {
+      left: 50px;
+      width: 215px;
     }
   }
 }

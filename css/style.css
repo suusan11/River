@@ -376,7 +376,6 @@ main {
 h1 {
   font-family: "EB Garamond", serif;
   font-size: 20px;
-  font-size: 6.25vw;
   font-weight: 500;
 }
 
@@ -386,10 +385,15 @@ h1 {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
 h2 {
   font-family: "EB Garamond", serif;
   font-size: 18px;
-  font-size: 5.625vw;
   font-weight: 500;
 }
 
@@ -399,13 +403,24 @@ h2 {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  h2 {
+    font-size: 23px;
+  }
+}
+
 p {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
 }
 
 @media (min-width: 960px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   p {
     font-size: 18px;
   }
@@ -420,10 +435,15 @@ a {
 li {
   font-family: "EB Garamond", serif;
   font-size: 13px;
-  font-size: 4.0625vw;
 }
 
 @media (min-width: 960px) {
+  li {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   li {
     font-size: 20px;
   }
@@ -448,7 +468,6 @@ img {
 .main__header {
   position: relative;
   font-size: 15px;
-  font-size: 4.6875vw;
   color: #B27C76;
   margin: 10% 0;
 }
@@ -459,21 +478,34 @@ img {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .main__header {
+    font-size: 20px;
+  }
+}
+
 .main__header::after {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 50px;
   content: '';
   display: block;
   border-top: 1px solid #B27C76;
-  width: 75%;
+  width: 150px;
   margin-left: 5%;
 }
 
 @media (min-width: 960px) {
   .main__header::after {
-    left: 10%;
-    width: 30%;
+    left: 50px;
+    width: 215px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .main__header::after {
+    left: 50px;
+    width: 215px;
   }
 }
 
@@ -491,6 +523,13 @@ html {
   width: 100%;
   height: 100%;
   border-bottom: 1px solid #C2C6C7;
+  padding: 0 2.5%;
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .header {
+    padding: 0;
+  }
 }
 
 .header__flex {
@@ -514,12 +553,6 @@ html {
       -ms-flex-order: 1;
           order: 1;
   margin: 5% 0 2% 0;
-}
-
-@media (min-width: 960px) {
-  .header__left {
-    font-size: 30px;
-  }
 }
 
 .header__right {
@@ -618,7 +651,13 @@ html {
 
 @media (min-width: 960px) {
   .header__right .search-submit {
-    top: 5px;
+    top: 0px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .header__right .search-submit {
+    top: 0px;
   }
 }
 
@@ -666,9 +705,24 @@ html {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .header-nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 3% 0;
+  }
+}
+
 @media (min-width: 960px) {
   .header-nav > li {
     margin: 0 3%;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .header-nav > li {
+    margin-right: 5%;
   }
 }
 
@@ -683,6 +737,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 2.5%;
   margin: 10% 0;
 }
 
@@ -732,10 +787,15 @@ html {
 .footer__widet--header {
   font-family: "EB Garamond", serif;
   font-size: 15px;
-  font-size: 4.6875vw;
 }
 
 @media (min-width: 960px) {
+  .footer__widet--header {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .footer__widet--header {
     font-size: 20px;
   }
@@ -749,6 +809,12 @@ html {
 @media (min-width: 960px) {
   .footer__widet--item {
     margin: 0 1.5%;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .footer__widet--item {
+    margin-bottom: 3%;
   }
 }
 
@@ -827,13 +893,19 @@ html {
 
 .footer__widet--item-tags p {
   font-size: 10px;
-  font-size: 3.125vw;
   border: 0.5px solid #5F5F5F;
   margin: 0 5% 5% 0;
   padding: 5px 10px;
 }
 
 @media (min-width: 960px) {
+  .footer__widet--item-tags p {
+    font-size: 15px;
+    margin: 0 10px 10px 0;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .footer__widet--item-tags p {
     font-size: 15px;
     margin: 0 10px 10px 0;
@@ -847,7 +919,6 @@ html {
 
 .footer__copy p {
   font-size: 10px;
-  font-size: 3.125vw;
   line-height: 38px;
 }
 
@@ -887,8 +958,15 @@ html {
 @media (min-width: 960px) {
   .thumbnail__flex .summary {
     width: 45%;
-    height: 600px;
+    height: auto;
     padding: 5%;
+    margin: 10% 2.5% 0;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .thumbnail__flex .summary {
+    height: auto;
     margin: 10% 2.5% 0;
   }
 }
@@ -906,7 +984,6 @@ html {
 
 .thumbnail__flex .summary__date--item.month, .thumbnail__flex .summary__date--item.day {
   font-size: 16px;
-  font-size: 5vw;
 }
 
 @media (min-width: 960px) {
@@ -915,12 +992,23 @@ html {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .thumbnail__flex .summary__date--item.month, .thumbnail__flex .summary__date--item.day {
+    font-size: 26px;
+  }
+}
+
 .thumbnail__flex .summary__date--item.year {
   font-size: 10px;
-  font-size: 3.125vw;
 }
 
 @media (min-width: 960px) {
+  .thumbnail__flex .summary__date--item.year {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .thumbnail__flex .summary__date--item.year {
     font-size: 16px;
   }
@@ -937,7 +1025,6 @@ html {
 
 .thumbnail__flex .summary__text--title {
   font-size: 20px;
-  font-size: 6.25vw;
   font-weight: 500;
   margin: 5% 0;
 }
@@ -948,9 +1035,14 @@ html {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .thumbnail__flex .summary__text--title {
+    font-size: 32px;
+  }
+}
+
 .thumbnail__flex .summary__text--intro {
   font-size: 10px;
-  font-size: 3.125vw;
   font-weight: 300;
   margin: 0;
 }
@@ -961,9 +1053,14 @@ html {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .thumbnail__flex .summary__text--intro {
+    font-size: 16px;
+  }
+}
+
 .thumbnail__flex .summary__text--link-post {
   font-size: 10px;
-  font-size: 3.125vw;
 }
 
 .thumbnail__flex .summary__text--link-post::before {
@@ -976,6 +1073,12 @@ html {
 }
 
 @media (min-width: 960px) {
+  .thumbnail__flex .summary__text--link-post {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .thumbnail__flex .summary__text--link-post {
     font-size: 16px;
   }
@@ -997,7 +1100,7 @@ html {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
-    height: 400px;
+    height: auto;
   }
   .thumbnail__flex .summary.new-post .summary__date {
     width: 5%;
@@ -1007,7 +1110,8 @@ html {
     width: 40%;
   }
   .thumbnail__flex .summary.new-post .post__image {
-    width: 40%;
+    width: 50%;
+    margin-bottom: 0;
   }
 }
 
@@ -1036,6 +1140,12 @@ html {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .post__date {
+    margin-left: 0;
+  }
+}
+
 .post__date .text__center {
   text-align: center;
 }
@@ -1047,7 +1157,6 @@ html {
 
 .post__date--item.month, .post__date--item.day {
   font-size: 16px;
-  font-size: 5vw;
 }
 
 @media (min-width: 960px) {
@@ -1056,12 +1165,23 @@ html {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .post__date--item.month, .post__date--item.day {
+    font-size: 26px;
+  }
+}
+
 .post__date--item.year {
   font-size: 10px;
-  font-size: 3.125vw;
 }
 
 @media (min-width: 960px) {
+  .post__date--item.year {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .post__date--item.year {
     font-size: 16px;
   }
@@ -1073,7 +1193,6 @@ html {
 
 .post__text--title {
   font-size: 20px;
-  font-size: 6.25vw;
   font-weight: 500;
   margin-top: 0;
 }
@@ -1086,12 +1205,17 @@ html {
 
 .post__text--intro {
   font-size: 10px;
-  font-size: 3.125vw;
   font-weight: 300;
   margin: 0;
 }
 
 @media (min-width: 960px) {
+  .post__text--intro {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .post__text--intro {
     font-size: 16px;
   }
@@ -1145,13 +1269,19 @@ html {
 }
 
 .post .border__top {
-  border-top: 0.5px solid #B27C76;
+  border-top: 1px solid #B27C76;
   width: 100%;
   margin-top: 20%;
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .post .border__top {
+    margin-top: 15%;
+  }
+}
+
 .post .border__bottom {
-  border-bottom: 0.5px solid #B27C76;
+  border-bottom: 1px solid #B27C76;
   width: 50%;
   padding: 10px;
   margin: 0 auto;
@@ -1176,17 +1306,28 @@ html {
   }
 }
 
+@media (min-width: 560px) and (max-width: 959px) {
+  .link__posts h2 {
+    margin-bottom: 10%;
+  }
+}
+
 .gallery__thumbnail {
   margin: 15% 0;
 }
 
 .gallery__thumbnail--intro {
-  font-size: 10px;
-  font-size: 3.125vw;
+  font-size: 19px;
   font-weight: 300;
 }
 
 @media (min-width: 960px) {
+  .gallery__thumbnail--intro {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .gallery__thumbnail--intro {
     font-size: 16px;
   }
@@ -1198,12 +1339,17 @@ html {
 
 .gallery--intro {
   font-size: 10px;
-  font-size: 3.125vw;
   font-weight: 300;
   margin-bottom: 15%;
 }
 
 @media (min-width: 960px) {
+  .gallery--intro {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
   .gallery--intro {
     font-size: 16px;
   }
@@ -1244,18 +1390,31 @@ html {
 .contact__form textarea {
   width: 100%;
   border: 0.5px solid #5F5F5F;
-  padding: 10px;
+  padding: 7px 10px 10px 10px;
   margin: 5% 0;
   outline: none;
   font-size: 100%;
   font-family: "Be Vietnam", sans-serif;
 }
 
+@media (min-width: 960px) {
+  .contact__form input,
+  .contact__form textarea {
+    margin: 2% 0;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact__form input,
+  .contact__form textarea {
+    margin: 2% 0;
+  }
+}
+
 .contact__form input::-webkit-input-placeholder,
 .contact__form textarea::-webkit-input-placeholder {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #5F5F5F;
   opacity: 0.7;
 }
@@ -1264,7 +1423,6 @@ html {
 .contact__form textarea:-ms-input-placeholder {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #5F5F5F;
   opacity: 0.7;
 }
@@ -1273,7 +1431,6 @@ html {
 .contact__form textarea::-ms-input-placeholder {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #5F5F5F;
   opacity: 0.7;
 }
@@ -1282,7 +1439,6 @@ html {
 .contact__form textarea::placeholder {
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #5F5F5F;
   opacity: 0.7;
 }
@@ -1301,8 +1457,21 @@ html {
   background-color: #B27C76;
   font-family: "Be Vietnam", sans-serif;
   font-size: 13px;
-  font-size: 4.0625vw;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+@media (min-width: 960px) {
+  .contact__form button {
+    width: 23%;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 959px) {
+  .contact__form button {
+    width: 23%;
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

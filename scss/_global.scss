@@ -32,6 +32,9 @@ h2 {
   font-family: $font-serif;
   @include font_vw(18);
   font-weight: $font-weight-medium;
+  @include pc {
+    font-size: 23px;
+  }
 }
 p {
   font-family: $font-sanserif;

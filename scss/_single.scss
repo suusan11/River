@@ -6,10 +6,9 @@
     display: flex;
     justify-content: space-between;
   }
-  &__date {                           //テキストの中はセンター、大枠はレフトにしたい
-    width: 30%;
+  &__date {
+    width: 10%;
     text-align: left;
-    // margin-left: -7%;
     @include pc {
       margin-left: 0;
     }
@@ -35,7 +34,7 @@
     }
   }
   &__text {
-    width: 70%;
+    width: 80%;
 
     &--title {
       @include font_vw(20);
@@ -102,11 +101,13 @@
 .link__posts {
   margin: 20% 0;
   p {
-    @include font_vw(15);
     font-family: $font-serif;
     margin-bottom: 0;
   }
   h2 {
     margin: 5% 0 15% 0;
+    @include pc {
+      margin-bottom: 10%;
+    }
   }
 }
